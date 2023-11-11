@@ -1,0 +1,47 @@
+@viewport {
+	width: device-width ;
+        height: device-height;
+	zoom: 1.0 ;
+	max-zoom: 1.0;
+        user-scalable: 0;
+}
+img{
+        animation: fadeIn 5s;
+        border-radius: 50%;
+        background: blue;
+        box-shadow: 0 0 100px blueviolet; 
+}
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+        p{
+           color: orangered; 
+           font-family: "Arial";
+           font-size:200;
+           margin: auto;
+           white-space: nowrap;
+           overflow: hidden;
+           width: 30em;
+           margin-top: 40vh;
+           float: center;
+          /* added animation property to show the character one at a time*/
+           animation: type 5s steps(50, start); 
+           font-family: 'Poppins', sans-serif;
+        }
+ 
+        /*set the background colour of div element to black */
+        body{
+          background-color: black;
+         }
+ 
+         @keyframes type{ 
+          from { 
+               width: 0;
+               
+         }
+        }
