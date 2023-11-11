@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+  }
+ @media (max-width: 800px) 
+  {
+	  @viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+	max-zoom: 1.0;
+        user-scalable: 0;
+	  }/* 
+	  #menu{
+		  width:0px;
+		  height:0px;
+		  visibility: hidden;
+	  } */
+	  .Notice ,.Notice-scroll, .ul-marq>li>a, .ul-marq>hr, marquee, #Notice-text{
+		  width:0px;
+		  height:0px;
+		  visibility:hidden;
+	  }
+	#welcome>p{
+		  text-align: justify;
+	  }
+	  .container * :not(.button){
+		  width:85vw;
+	  }
+	  .container #section-2 .button{
+		  margin-left: 50vw;
+	  }
+	  
+/*html, body :not(.mobile){
+    visibility: hidden;
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden;
+     }
+	  .mobile>img{
+                  visibility:visible;
+	          width: 95vw;
+	 }
+	  .mobile>font{
+                  visibility:visible;
+	  }*/
+	  #toggle{
+		top:2px;
+		right:2px;
+		position: fixed;
+	  }
+	}
+	
+html, body:not(.Notice){
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+	-webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	height: 100%;
+	background: #281E5D;
+	color: white;
+	/*background-color: #281E5D;*/
+}
+.mobile{
+	visibility: hidden;
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+img {
+	-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+ }
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #281E5D;
+	font-family: 'Roboto';
+	font-size: 12pt;
+	cursor: default;
+}
+/*************************/
+/* Styling Header 	 */
+/*************************/
+header{
+	
+	overflow: hidden;
+}
+
+#top-header{
+		
+	text-align: center;
+	height: 60px;
+	width:98.5vw;
+	margin: 0;
+	padding: 0;
+}
+
+/****************/
+/* Styling Logo */
+/****************/
+#logo{
+	float: left;
+	top:0px;
+	padding: 0;
+	margin: 0;
+	height: 60px;
+	width: 30%;
+}
+
+#logo img{
+	float: left;
+	padding: 0px 0px;
+}
+#logo :hover{
+	animation: spin 0.8s linear 1;
+}
+@keyframes spin { 
+    100% {  
+        transform:rotateY(180deg);
+    } 
+}
+/***********************************/
+/* Styling company name beside logo*/
+/***********************************/
+#c-name-logo{
+	text-decoration: none;
+	float: left;
+	color: orangered;
+	padding-left: 10px;
+	font-size: 50px;
+	font-family: 'Rouge Script', cursive;
+}
+#c-name-logo>a{
+	text-decoration:none;
+	color: orangered;
+	font-size: 50px;
+	font-family: 'Rouge Script', cursive;
+}
+
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+	top: 0%;
+    margin: 0;
+}
+
+#menu  ul :hover {
+	transform: rotateY(180deg);
+	transition: transform 0.8s;
+}
+
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: 0;
+    background: #00FFFF;
+	margin-top: 0;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #FFA500;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFA500;
+    color: #00FFFF;
+    border-left: 2px solid #0000FF;
+	border-right: 2px solid #0000FF;
+	border-radius: 5pt;
+    text-decoration: none;
+}
+
+/*****************************/
+/* Styling Header Image Menu */
+/*****************************/
+#header-image-menu{
+	position: relative;
+}
+
+#header-image-menu img{
+	width: 98.5vw;
+	margin: none;
+	padding: none;
+}
+
+#image-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: 'Roboto';
+	color: #000;
+	transform: translate(-30%, -30%);
+	text-align: center;
+}
+/***************************/
+/* Styling Notice Menu */
+/***************************/
+.Notice{
+	position: absolute;
+	top: 4in ;
+	right: 1in;
+	display: inline-block;
+	border-radius: 10px;
+	width:3.25in;
+	height: 2.5in;
+	color: #000000;
+	background: #fae9d5;
+	overflow:none;
+}
+.ul-marq>li>a{
+	color: aqua;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+.ul-marq>li>a:hover{
+	color:orangered;
+}
+.ul-marq>hr{
+	border-top: 1px dashed black;
+}
+marquee{
+	margin-bottom: 5px;
+	height: 2in;
+}
+.Notice-scroll{
+	height: 2in;
+	padding-inline: 20px ;
+}
+#Notice-text{
+	color:#000000;
+	background: rgb(0, 60, 139);
+	line-height:inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/**********************************/
+/* Styling Main content Section 1 */
+/**********************************/
+
+#welcome
+{ overflow: hidden;
+	width: 97.5vw;
+	margin:0.5vw;
+	border-right: 0;
+	border-left: 0;
+ /*background-color: #281E5D;*/
+}
+		
+#welcome .title{
+	width: 97.5vw;
+	margin-top: 20px;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	background: url(https://images.moneycontrol.com/static-mcnews/2023/05/Collage-Maker-14-May-2023-11-24-AM-7730-770x433.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	/*text-shadow: 1px 1px 2px navy;*/
+	/*background-color: #281E5D;*/
+}
+
+#welcome :not(.c-name) p {
+	color: White;
+	margin-bottom: 40px;
+	@media(min-width:800px){text-align: center;}
+	@media(max-width:800px){text-align: justify;}
+	/*background-color: #281E5D;*/
+}
+/*#welcome strong{
+	/*color: orangered;*/
+	/*background-color: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+	background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+        /*-webkit-background-clip:text;
+        background-clip: text;
+        color: transparent;
+	background: url(https://24.media.tumblr.com/tumblr_m87dri70zh1qzla33o1_500.gif);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	/*text-shadow: 1px 1px 2px navy;
+	/*background-color: #281E5D;
+} */
+#welcome .undrln{
+color: orangered;
+	/*background-color: #281E5D;*/
+}
+
+/*****************************************/
+/*    Styling Main Content Section 2     */
+/*****************************************/
+.container{
+	/* Set width of container to
+		1200px and align center */
+	margin: 0.5vw;
+	width: 97.5vw;
+	border-right: 0;
+	border-left: 0;
+}
+#section-2{
+	overflow: hidden;
+	padding-top:5em;
+	padding-bottom: 5em;
+	border-right: 0;
+	border-left: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.image
+{
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, .5);
+	border-radius: 7.5px;
+}
+	
+.image img
+{
+	display: block;
+	width: 100%;
+}
+	
+.image-full
+{
+	display: block;
+	width: 100%;
+	margin: 1.5em 0 3em 0;
+}
+	
+.img-title{
+	display: block;
+	font-size: 1.5em;
+	color: orangered;
+}
+.img-title>h3{
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+}
+
+/* Add fixed width for each column and
+align text to center */
+#column21,
+#column22,
+#column23,
+#column24
+{
+	width: 20%;
+	text-align: center;
+	@media(max-width:800px){width:99vw; margin:0.5vw;}
+}
+	
+
+
+#column21,
+#column22,
+#column23,
+#column24 {
+	float: left;
+	margin: auto 25px;
+}
+.button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #0000FF;
+    color: white;
+    border: 2px solid #00FFFF;
+	border-radius: 15pt;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 1em 1em 2em red;
+}
+     
+.button:hover {
+    background-color: white;
+    color: #0000FF;
+	box-shadow: inset 5px 5px 10px rgb(255, 0, 0), inset -5px -5px 10px rgb(255, 0, 0) ;
+	transition-duration: 0.8s;
+}
+/**********************************/
+/*	Styling Footer		          */
+/**********************************/
+footer{
+	float: bottom;
+}
+/*** Adding Styles to Company Details ***/
+.company-details{
+	overflow: hidden;
+	padding: 5em 0em;
+	background: #000000;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#c-ref{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+	float: left;
+	width: 320px;
+	padding: 0px 40px 0px 40px;
+}
+	
+#footer #icon{
+	display: block;
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #000000;
+}
+	
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(255, 255, 255, 0.6);
+}
+	
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+	font-family: 'Times New Roman', Times, serif;
+}
+	
+ul.contact li{
+	display: inline-block;
+	padding: 0em 2em;
+	font-size: 1em;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: #000000;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 100;
+}

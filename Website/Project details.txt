@@ -1,0 +1,9 @@
+Authour:Abheek Kumar Sarangi
+Date: 15/07/2022
+Version: 16.45.23.
+Languages used: HTML5, CSS.
+Website for: Team Website at mahaindia.netlify.app
+Other details:
+		javascript and php may be used.
+		Database will be included(probably one that does not use sql)
+		
