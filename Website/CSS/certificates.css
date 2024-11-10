@@ -1,0 +1,51 @@
+#certificte-img-l{
+    float: left;
+    height: 75vh;
+    width: 49%;
+    overflow: hidden;
+	padding-top: 5em;
+	text-align: center;
+}
+#certificte-img-r{
+    float: right;
+    height: 75vh;
+    width: 49%;
+    overflow: hidden;
+	padding-top: 5em;
+	text-align: center;
+}
+.certificte-content-l{
+    float: left;
+    height: 75vh;
+    width: 49%;
+    overflow: hidden;
+	padding-top: 5em;
+	text-align: center;
+    font-size: x-large;
+}
+.certificte-content-r{
+    float: right;
+    height: 75vh;
+    width: 49%;
+    overflow: hidden;
+	padding-top: 5em;
+	text-align: center;
+    font-size:x-large;
+}
+main{
+    display: block;
+    overflow:hidden;
+    width: 95vw;
+    margin-left:2.5vw;
+}
+.certificate:not(#navachar){
+    overflow: hidden;
+	padding-top: 5em;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+#navachar{
+    overflow: hidden;
+	padding-top: 2em;
+	text-align: center;
+}

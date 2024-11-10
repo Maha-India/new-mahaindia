@@ -1,0 +1,184 @@
+html, body{
+	height: 100%;
+}
+	
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	font-family: 'Roboto';
+	font-size: 12pt;
+}
+		
+
+
+/*************************/
+/* Styling Header 	 */
+/*************************/
+header{
+	
+	overflow: hidden;
+	text-align: center;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+}
+
+/****************/
+/* Styling Logo */
+/****************/
+#logo{
+	float: left;
+	padding: 0;
+	margin: 0;
+	height: 60px;
+	width: 30%;
+}
+
+#logo img{
+	float: left;
+	padding: 0px 0px;
+}
+#logo :hover{
+	animation: spin 0.8s linear 1;
+}
+@keyframes spin { 
+    100% {  
+        transform:rotateY(180deg);
+    } 
+}
+
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: 0;
+}
+
+#menu  ul :hover {
+	transform: rotateY(180deg);
+	transition: transform 0.8s;
+}
+
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #00FFFF;
+    margin-top: 0;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #FFA500;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFA500;
+    color: #00FFFF;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
+
+#msg{
+    margin-left: 2px;
+    height: 18;
+    width: 70;
+}
+
+/**********************************/
+/*	Styling Footer		          */
+/**********************************/
+
+/*** Adding Styles to Company Details ***/
+.company-details{
+	overflow: hidden;
+	padding: 3em 0em;
+	background: #000000;
+	text-align: center;
+	margin-top: 5em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#c-ref{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+	float: left;
+	width: 320px;
+	padding: 0px 40px 0px 40px;
+}
+	
+#footer #icon{
+	display: block;
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #000000;
+}
+	
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(255, 255, 255, 0.6);
+}
+	
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+}
+	
+ul.contact li{
+	display: inline-block;
+	padding: 0em 2em;
+	font-size: 1em;
+}
+
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: #000000;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}

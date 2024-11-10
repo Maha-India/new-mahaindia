@@ -1,0 +1,12 @@
+.content-title
+{ 
+	top:480px;
+	overflow: hidden;
+	width: 90vw;
+	margin:0.5vw;
+	color:rgb(255, 165, 0);
+	text-shadow: 1px 1px 2px navy;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+} 
