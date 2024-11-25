@@ -4,7 +4,7 @@ const path = require('path');
 // Netlify function to fetch image and video metadata
 exports.handler = async function() {
   // Adjust the path to point to the images folder in the root/Abheek/images directory
-  const mediaDir = path.join(__dirname, '.../Abheek/images');
+  const mediaDir = path.join(__dirname, '.../Abheek/images/');
   
   try {
     // Read the media directory
@@ -33,7 +33,7 @@ exports.handler = async function() {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Error reading media directory' })
+      body: JSON.stringify({ error: 'Error reading media directory';__dirname:"current dir" })
     };
   }
 };
