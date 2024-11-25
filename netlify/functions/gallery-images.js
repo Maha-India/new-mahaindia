@@ -4,7 +4,7 @@ const path = require('path');
 // Netlify function to fetch image and video metadata
 exports.handler = async function() {
   // Adjust the path to point to the images folder in the root/Abheek/images directory
-  const mediaDir = path.resolve('../../Abheek/images/');
+  const mediaDir = path.resolve('./../Abheek/images/');
   
   try {
     // Read the media directory
