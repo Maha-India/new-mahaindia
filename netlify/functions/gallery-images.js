@@ -33,7 +33,7 @@ exports.handler = async function() {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Error reading media directory';__dirname:"current dir" })
+      body: JSON.stringify({ error: 'Error reading media directory'}{__dirname:"current dir" })
     };
   }
 };
