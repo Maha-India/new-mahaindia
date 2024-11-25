@@ -9,20 +9,20 @@ fetch('/.netlify/functions/getMedia')
       let mediaElement;
 
       // Determine if the item is an image or a video
-      if (/\.(jpg|jpeg|png)$/.test(item.filename)) {
+      if (/\.(jpg|jpeg|png)$/.test(item.filename.toLowerCase())) {
         // Create img element for images
         mediaElement = document.createElement('img');
         mediaElement.src = `images/${item.filename}`;
         mediaElement.alt = item.altText || 'Image';
         
         // Add relevant classes based on filename patterns
-        if (item.filename.endsWith('-w.jpg') || item.filename.endsWith('-w.jpeg') || item.filename.endsWith('-w.png')) {
+        if (item.filename.toLowerCase().endsWith('-w.jpg') || item.filename.toLowerCase().endsWith('-w.jpeg') || item.filename.toLowerCase().endsWith('-w.png')) {
           mediaElement.classList.add('wide-image');
         }
-        if (item.filename.endsWith('-f.jpg') || item.filename.endsWith('-f.jpeg') || item.filename.endsWith('-f.png')) {
+        if (item.filename.toLowerCase().endsWith('-f.jpg') || item.filename.toLowerCase().endsWith('-f.jpeg') || item.filename.toLowerCase().endsWith('-f.png')) {
           mediaElement.classList.add('four-grid-cells');
         }
-      } else if (/\.(mp4|mov)$/.test(item.filename)) {
+      } else if (/\.(mp4|mov)$/.test(item.filename.toLowerCase())) {
         // Create video element for videos
         mediaElement = document.createElement('video');
         mediaElement.src = `images/${item.filename}`;
@@ -30,10 +30,10 @@ fetch('/.netlify/functions/getMedia')
         mediaElement.alt = item.altText || 'Video';
 
         // Add relevant classes for videos if needed (optional)
-        if (item.filename.endsWith('-w.mp4') || item.filename.endsWith('-w.mov')) {
+        if (item.filename.toLowerCase().endsWith('-w.mp4') || item.filename.toLowerCase().endsWith('-w.mov')) {
           mediaElement.classList.add('wide-image');
         }
-        if (item.filename.endsWith('-f.mp4') || item.filename.endsWith('-f.mov')) {
+        if (item.filename.toLowerCase().endsWith('-f.mp4') || item.filename.toLowerCase().endsWith('-f.mov')) {
           mediaElement.classList.add('four-grid-cells');
         }
       }
