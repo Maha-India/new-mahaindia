@@ -1,0 +1,14 @@
+{
+  "name": "gallery-project",
+  "version": "1.0.0",
+  "description": "A project to generate gallery JSON from images",
+  "main": "generate-gallery-json.js",
+  "scripts": {
+    "start": "node generate-gallery-json.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.30.0"
+  }
+}
