@@ -38,6 +38,7 @@ span{
 @media screen and (max-width: 768px) {
    .gallery {
         grid-template-columns: 1fr 1fr;
+       grid-auto-rows:28.125;
     }
 }
 @media screen and (max-width: 480px) {
@@ -45,6 +46,7 @@ span{
 /* changes the grid layout to a single column */
     div.gallery {
         grid-template-columns: 1fr;
+        grid-auto-rows: 56.25vw
     }
 
 /* resets the grid placement properties for 
