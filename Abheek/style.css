@@ -20,6 +20,9 @@ img.four-grid-cells {
 img.wide-image {
     grid-column: span 2 / auto;
 }
+span{
+    grid-column: span 4 / auto;
+}
 @media screen and (max-width: 768px) {
    .gallery {
         grid-template-columns: 1fr 1fr;
