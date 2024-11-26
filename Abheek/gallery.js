@@ -40,8 +40,8 @@ fetch('../gallery.json')
 
       // Add a span for the date created (acts as a section break)
       const dateSpan = document.createElement('span');
-      dateSpan.classList.add('date-created');
-      dateSpan.textContent = item.dateCreated;
+      dateSpan.classList.add('creation-date');
+      dateSpan.textContent = formatDate(new Date(item.dateCreated)); // Format the date
 
       // Append the date span and media element to the gallery
       gallery.appendChild(dateSpan);
@@ -49,4 +49,13 @@ fetch('../gallery.json')
     });
   })
   .catch(error => console.error('Error fetching media:', error));
-                                       
+function formatDate(date) {
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  const day = String(date.getDate()).padStart(2, '0'); // Add leading zero to day if needed
+  const month = months[date.getMonth()];               // Get month name
+  const year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+}
