@@ -41,7 +41,7 @@ fetch('../gallery.json')
       // Add a span for the date created (acts as a section break)
       const dateSpan = document.createElement('span');
       dateSpan.classList.add('date-created');
-      dateSpan.textContent = new Date(item.dateCreated).toLocaleDateString();
+      dateSpan.textContent = item.dateCreated;
 
       // Append the date span and media element to the gallery
       gallery.appendChild(dateSpan);
