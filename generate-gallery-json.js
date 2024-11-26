@@ -20,8 +20,8 @@ async function generateGalleryJSON() {
       if (stat.isFile()) {
         // Get creation date and check filename suffix
         const createdDate = stat.birthtime;
-        const isWideImage = file.match(/-w\.jpg|/-w\.png|/-w\.jpeg);
-        const isFourGrid = file.match(/-f\./jpg|/-f\.png|/-f\.jpeg);
+        const isWideImage = file.match(/-w\./);
+        const isFourGrid = file.match(/-f\./);
 
         // Push image data to the gallery array
         gallery.push({
