@@ -32,7 +32,8 @@ video.wide-image {
     grid-column: span 2 / auto;
 }
 span{
-    display:block;
+    grid-column: span 4/auto
+    grid-auto-rows: 5vw;
 }
 @media screen and (max-width: 768px) {
    .gallery {
