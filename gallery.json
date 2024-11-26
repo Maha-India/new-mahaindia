@@ -1,22 +1,29 @@
 [
   {
     "filename": "VID-20241118-WA0000.mp4",
-    "createdDate": "2024-11-26T09:17:17.048Z",
+    "createdDate": "2024-11-26T11:10:57.293Z",
     "classes": []
   },
   {
     "filename": "frame_0.jpg",
-    "createdDate": "2024-11-26T09:17:17.048Z",
+    "createdDate": "2024-11-26T11:10:57.293Z",
     "classes": []
   },
   {
     "filename": "IMG-20241114-WA0021.jpg",
-    "createdDate": "2024-11-26T09:17:17.040Z",
+    "createdDate": "2024-11-26T11:10:57.285Z",
     "classes": []
   },
   {
     "filename": "Picsart_24-11-17_18-09-00-323.png",
-    "createdDate": "2024-11-26T09:17:17.040Z",
+    "createdDate": "2024-11-26T11:10:57.285Z",
     "classes": []
+  },
+  {
+    "filename": "DSCN1098-editted-w.mp4",
+    "createdDate": "2024-11-26T11:10:57.249Z",
+    "classes": [
+      "wide-image"
+    ]
   }
 ]
