@@ -4,6 +4,17 @@ const path = require('path');
 // Path to the images directory
 const imagesDirectory = path.join(__dirname, '/Abheek/images');
 
+function formatDate(date) {
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = months[date.getMonth()]; // Get month name
+  const year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+}
+
 // Function to generate the gallery JSON
 async function generateGalleryJSON() {
   const gallery = [];
@@ -19,14 +30,15 @@ async function generateGalleryJSON() {
       // Check if it's a file
       if (stat.isFile()) {
         // Get creation date and check filename suffix
-        const createdDate = stat.birthtime;
+    const birthtime = stats.birthtime;
+    const formattedDate = formatDate(new Date(birthtime));
         const isWideImage = file.match(/-w\./);
         const isFourGrid = file.match(/-f\./);
 
         // Push image data to the gallery array
         gallery.push({
           filename: file,
-          createdDate: createdDate,
+          createdDate: formattedDate,
           classes: [
             ...(isWideImage ? ['wide-image'] : []),
             ...(isFourGrid ? ['four-grid-cells'] : []),
