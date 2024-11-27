@@ -68,4 +68,15 @@ the images spanning two grid columns  */
         grid-column: auto;
     }
 
+    video.four-grid-cells {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+/* resets the grid placement properties for 
+the images spanning two grid columns  */
+    video.wide-image {
+        grid-column: auto;
+    }
+
 }
