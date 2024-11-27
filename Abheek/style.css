@@ -10,26 +10,32 @@ img {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    border-radius:10px;
 }
 video {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    border-radius:10px;
 }
 
 img.four-grid-cells {
     grid-row: span 2 / auto;
     grid-column: span 2 / auto;
+    border-radius:10px;
 }
 video.four-grid-cells {
     grid-row: span 2 / auto;
     grid-column: span 2 / auto;
+    border-radius:10px;
 }
 img.wide-image {
     grid-column: span 2 / auto;
+    border-radius:10px;
 }
 video.wide-image {
     grid-column: span 2 / auto;
+    border-radius:10px;
 }
 span{
     grid-column: span 4/auto
