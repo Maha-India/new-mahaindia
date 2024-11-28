@@ -22,6 +22,7 @@ async function generateGalleryJSON() {
         const createdDate = stat.birthtime;
         const isWideImage = file.match(/-w\./);
         const isFourGrid = file.match(/-f\./);
+        const isTallImage = file.match(/-t\./);
 
         // Push image data to the gallery array
         gallery.push({
@@ -30,6 +31,7 @@ async function generateGalleryJSON() {
           classes: [
             ...(isWideImage ? ['wide-image'] : []),
             ...(isFourGrid ? ['four-grid-cells'] : []),
+            ...(isTallImage ? ['tall-image'] : []),
           ]
         });
       }
