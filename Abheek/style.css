@@ -33,6 +33,14 @@ img.wide-image {
     grid-column: span 2 / auto;
     border-radius:10px;
 }
+img.long-image {
+    grid-row: span 2 / auto;
+    border-radius:10px;
+}
+video.tall-image {
+    grid-row: span 2 / auto;
+    border-radius:10px;
+}
 video.wide-image {
     grid-column: span 2 / auto;
     border-radius:10px;
