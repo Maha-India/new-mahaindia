@@ -22,6 +22,9 @@ fetch('../gallery.json')
         if (item.filename.toLowerCase().endsWith('-f.jpg') || item.filename.toLowerCase().endsWith('-f.jpeg') || item.filename.toLowerCase().endsWith('-f.png')) {
           mediaElement.classList.add('four-grid-cells');
         }
+        if (item.filename.toLowerCase().endsWith('-t.jpg') || item.filename.toLowerCase().endsWith('-t.jpeg') || item.filename.toLowerCase().endsWith('-t.png')) {
+          mediaElement.classList.add('tall-image');
+        }
       } else if (/\.(mp4|mov)$/.test(item.filename.toLowerCase())) {
         // Create video element for videos
         mediaElement = document.createElement('video');
