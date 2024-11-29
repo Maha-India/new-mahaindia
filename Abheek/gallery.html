@@ -6,7 +6,7 @@
     <meta name="openai-domain-verification" content="dv-ZTJLky6elKfHtB5fTkmQdUkA">
     <title>Website Down</title>
     <style>
-        body {
+        body:not(kbd) {
             font-family: 'Arial', sans-serif;
             background-color: #f0f2f5;
             color: #333;
@@ -15,6 +15,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        body>kbd{
+            justify-content: right;
         }
         .container {
             text-align: center;
