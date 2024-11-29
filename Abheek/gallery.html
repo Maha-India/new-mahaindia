@@ -19,8 +19,15 @@
         body>kbd{
             justify-content: flex-end;
         }
-        .container {
+        .container:not(kbd) {
             text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container>kbd {
+            text-align: right;
             background: #fff;
             padding: 30px;
             border-radius: 10px;
