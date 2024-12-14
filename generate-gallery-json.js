@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to the images directory
-const imagesDirectory = path.join(__dirname, '/Abheek/images');
+const imagesDirectory = path.join(__dirname, '/Abheek/gallery-images');
 
 // Function to generate the gallery JSON
 async function generateGalleryJSON() {
