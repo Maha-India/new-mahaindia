@@ -292,7 +292,7 @@ a:hover {
      HERO                
   -----------------------------------------*/
 .hero-image{
-border-radius: var(--border-radius-small);
+border-radius: 25px;
 }
 .hero-title,
 .email-link {
