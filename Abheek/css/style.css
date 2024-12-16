@@ -337,6 +337,11 @@ a:hover {
   width: 30%;
   margin-right: 1rem;
 }
+#mi{
+    background: -webkit-linear-gradient(#ff9933,#ffffff, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /*---------------------------------------
      FAQ                 
