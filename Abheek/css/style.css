@@ -291,7 +291,9 @@ a:hover {
 /*---------------------------------------
      HERO                
   -----------------------------------------*/
-
+.hero-image{
+border-radius: var(--border-radius-small);
+}
 .hero-title,
 .email-link {
   background: var(--dark-color);
