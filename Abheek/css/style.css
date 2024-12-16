@@ -429,7 +429,7 @@ border-radius: 10px;
   border-radius: 0;
   -webkit-appearance: none;
   outline: none;
-  color: var(--gray-color);
+  color: var(--white-color);
   font-weight: var(--font-weight-light);
   padding-left: 0;
   cursor: text;
@@ -470,13 +470,13 @@ border-radius: 10px;
 .contact-form ::-webkit-input-placeholder {
   opacity: 0;
   transition: inherit;
-  color: var(--gray-color);
+  color: var(--white-color);
 }
 
 .contact-form ::-moz-placeholder {
   opacity: 0;
   transition: inherit;
-  color: var(--gray-color);
+  color: var(--white-color);
 }
 
 .contact-form .form-control:focus::-webkit-input-placeholder {
