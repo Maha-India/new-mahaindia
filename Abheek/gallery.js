@@ -12,7 +12,7 @@ fetch('../gallery.json')
       if (/\.(jpg|jpeg|png)$/.test(item.filename.toLowerCase())) {
         // Create img element for images
         mediaElement = document.createElement('img');
-        mediaElement.src = `images/${item.filename}`;
+        mediaElement.src = `gallery-images/${item.filename}`;
         mediaElement.alt = item.altText || 'Image';
         
         // Add relevant classes based on filename patterns
@@ -28,7 +28,7 @@ fetch('../gallery.json')
       } else if (/\.(mp4|mov)$/.test(item.filename.toLowerCase())) {
         // Create video element for videos
         mediaElement = document.createElement('video');
-        mediaElement.src = `images/${item.filename}`;
+        mediaElement.src = `gallery-images/${item.filename}`;
         mediaElement.controls = true;  // Add controls for video playback
         mediaElement.alt = item.altText || 'Video';
 
