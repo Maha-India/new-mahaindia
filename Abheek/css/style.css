@@ -391,7 +391,6 @@ border-radius: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--white-color);
   transform-origin: left bottom;
   transform: translate(0, 2.125rem) scale(1.5);
 }
@@ -410,12 +409,10 @@ border-radius: 10px;
 
 .contact-form .form-control:focus::-webkit-input-placeholder {
   opacity: 1;
-  color: var(--white-color);
 }
 
 .contact-form .form-control:focus::-moz-placeholder {
   opacity: 1;
-  color: var(--white-color);
 }
 
 .contact-form .form-control:not(:placeholder-shown) + .webform-label,
