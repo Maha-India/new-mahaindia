@@ -346,78 +346,6 @@ border-radius: 10px;
 }
 
 /*---------------------------------------
-     FAQ                 
-  -----------------------------------------*/
-
-.faq .card-header {
-  padding: 0;
-}
-
-.faq .btn-link {
-  color: var(--dark-color);
-  font-size: var(--h6-font-size);
-  text-align: left;
-  display: block;
-  width: 100%;
-  padding: 1rem 2rem;
-}
-
-.faq .btn-link:focus,
-.faq .btn-link:hover {
-  color: var(--dark-color);
-  text-decoration: none;
-}
-
-.faq .card-body {
-  padding: 2rem;
-}
-
-.faq-info-text {
-  font-size: var(--base-font-size);
-  display: block;
-  margin: 1.5rem 2rem 0 2rem;
-}
-
-/*---------------------------------------
-     TESTIMONIALS               
-  -----------------------------------------*/
-
-.testimonials {
-  background: #f9f9f9;
-}
-
-.testimonials-image {
-  margin: 0 1rem 1rem 1rem;
-}
-
-.testimonials-image img {
-  border-radius: var(--border-radius-medium);
-}
-
-.testimonials-info {
-  width: 100%;
-}
-
-.testimonials .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 2rem;
-}
-
-.testimonials .owl-theme .owl-dots .owl-dot {
-  outline: none;
-}
-
-.testimonials .owl-theme .owl-dots .owl-dot span {
-  width: 30px;
-  height: 3px;
-  margin: 5px;
-}
-
-.testimonials .owl-theme .owl-dots .owl-dot.active span,
-.testimonials .owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--primary-color);
-}
-
-/*---------------------------------------
      CONTACT               
   -----------------------------------------*/
 
@@ -463,6 +391,7 @@ border-radius: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--white-color);
   transform-origin: left bottom;
   transform: translate(0, 2.125rem) scale(1.5);
 }
@@ -481,10 +410,12 @@ border-radius: 10px;
 
 .contact-form .form-control:focus::-webkit-input-placeholder {
   opacity: 1;
+  color: var(--white-color);
 }
 
 .contact-form .form-control:focus::-moz-placeholder {
   opacity: 1;
+  color: var(--white-color);
 }
 
 .contact-form .form-control:not(:placeholder-shown) + .webform-label,
