@@ -1,4 +1,5 @@
 # MAHA-INDIA
-websites:
-   main               : ./website
-   abheek's portfolio : ./Abheek
+| Sites               | Location  |
+|---------------------|-----------|
+| Main               :| ./website |
+| Abheek's portfolio :| ./Abheek  |
