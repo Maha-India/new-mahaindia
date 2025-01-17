@@ -403,11 +403,9 @@
             <form
 	      name="contact-abheek"
               method="POST"
-	      action="#"
               class="contact-form webform"
               role="form"
 	      data-netlify="true"
-	      onsubmit="return submitted()"
             >
 	      <input type="hidden" name="subject" value="New lead from %{formName} (%{submissionId})" />
  
@@ -457,9 +455,35 @@
               </button>
             </form>
 		  <script>
-			  function submitted() {
-            alert("Thank you for your submission");
-            return true;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    // Check if Netlify form name is present
+    if (!formData.has("form-name")) {
+      alert("Form submission failed: Missing form-name. please contact site developer to fix this.");
+      return;
+    }
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      alert("Thank you for your submission");
+      myForm.reset(); // Reset the form after successful submission
+    })
+    .catch((error) => {
+      alert("There was a problem with your submission: " + error);
+    });
+  };
+
+  // Ensure the form submits via JavaScript
+  const formElement = document.querySelector("form");
+  formElement.addEventListener("submit", handleSubmit);
 		  </script>
           </div>
 
