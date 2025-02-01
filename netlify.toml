@@ -3,6 +3,7 @@ from = "/404"
 to = "/404.html"
 status = 404
 force = true
+
 [[redirects]]
 from = "/Abheek/*"
 to = "aksarangi.netlify.app/:splat"
